@@ -1,0 +1,41 @@
+API Address: 'http://tools.xioax.com/networking/ip/'
+#API Key: 'key goes here'
+
+#By default, we allow players to join if we can't get a read on them
+#true = Allow
+#false = Deny
+Fallback Join Behavior: true
+
+#The message to disconnect the player with
+#Bungee = kicks player on PostLoginEvent
+#Bukkit = Denies join on AsyncPlayerPreLoginEvent
+Kick Message: 'Anonymizers are blocked due to spam. Please contact help@samistine.com if you wish to whitelist this IP.'
+
+#See https://google.github.io/guava/releases/17.0/api/docs/com/google/common/cache/CacheBuilderSpec.html
+Mem Cache Spec: >
+    concurrencyLevel=2,
+    initialCapacity=500,
+    maximumSize=10000,
+    expireAfterAccess=7d
+
+
+#Saves the mem-cache to file. Insertation time is not preserved.
+#Also loads the elements from file into the cache on boot.
+Save Lookups To File: true
+
+#If the above is true, where do we want to save our cache to?
+Cache File: plugins/VPNBlock/iplookup.cache
+
+#If "Save Lookups To File: true" how often should we save to file? 
+#In seconds. 600 = 10 minutes
+Save Interval: 600
+
+
+
+IP Whitelist:
+    - 8.8.8.8
+    - 8.8.4.4
+    
+Host Whitelist:
+    - 'RAMNODE'
+    - 'RamNode'

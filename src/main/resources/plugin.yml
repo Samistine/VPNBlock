@@ -1,0 +1,13 @@
+name: VPNBlock
+main: com.samistine.mcplugins.vpnblock.VPNBlockBukkit
+version: ${project.version}-b${BUILD_NUMBER}
+
+git_repo: https://github.com/Samistine/VPNBlock
+git_hash: ${git_hash}
+jenkins_build: ${BUILD_NUMBER}
+
+author: Samuel Seidel
+commands:
+  vpnblock:
+    description: Administer the plugin
+    permission: vpnblock.admin

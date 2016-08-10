@@ -1,0 +1,4 @@
+name: VPNBlock
+main: com.samistine.mcplugins.vpnblock.VPNBlockBungee
+version: 0.1
+author: Samistine
