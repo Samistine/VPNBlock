@@ -115,7 +115,7 @@ public class VPNBlockBungee extends Plugin implements Listener {
     }
     
     @EventHandler
-    protected void onPostLogin(PostLoginEvent event) {
+    public void onPostLogin(PostLoginEvent event) {
         ProxiedPlayer player = event.getPlayer();
         String ip = player.getAddress().getAddress().getHostAddress();
         
